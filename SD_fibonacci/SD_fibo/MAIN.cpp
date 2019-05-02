@@ -37,7 +37,7 @@ int main()
 	int num = 1;
 	int numresult;
 	std::cout << "Introduce un numero MENOR A 1 para SALIR\n\n";
-	while (num<0)
+	while (num>0)
 	{
 		std::cout << "Introduce el número en la secuencia de Fibonacci que quieres calcular: ";
 		std::cin >> num;
@@ -64,6 +64,7 @@ int main()
 		std::cout << std::chrono::duration_cast<std::chrono::milliseconds> (end - start).count() << " milisegundos!\n";
 		std::cout << std::chrono::duration_cast<std::chrono::seconds> (end - start).count() << " segudos!\n"; 
 		std::cout << ("\n------------------------------------------------------\n");
+		num = 1;
 	}
 	std::cout << "El programa se cerrara en 5 segundos...\n";
 	Sleep(1000);
