@@ -37,7 +37,7 @@ int main()
 	int num = 1;
 	int numresult;
 	std::cout << "Introduce un numero MENOR A 1 para SALIR\n\n";
-	while (num>0)
+	while (num<0)
 	{
 		std::cout << "Introduce el número en la secuencia de Fibonacci que quieres calcular: ";
 		std::cin >> num;
