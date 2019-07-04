@@ -10,8 +10,8 @@ std::vector<int> acendente(int n);
 std::vector <std::vector <int>> hashTable;
 std::vector <std::vector <int>> hashTable2;
 std::vector <std::vector <int>> hashTable3;
-int hashMul(int key, int consta);
-int hashDiv(int key, int consta);
+int hashMul(int key, int consta, int value);
+int hashDiv(int key, int consta, int value);
 int hashUn(int key, int value, int consta,int numKeys);
 void imprimirVector(std::vector<int> vec)
 {
@@ -20,6 +20,7 @@ void imprimirVector(std::vector<int> vec)
 		std::cout << vec[i] << ',';
 	}
 	std::cout << '\n';
+	std::cout << "\n";
 
 }
 int main()
@@ -33,15 +34,25 @@ int main()
 	hashTable3.resize(bucketNum);
 	for (int i = 0; i < vec.size(); i++)
 	{
-		hashMul(vec[i],bucketNum);
-		hashDiv(vec[i], bucketNum);
+		hashMul(i,bucketNum, vec[i]);
+		hashDiv(i, bucketNum, vec[i]);
 		hashUn(i,vec[i],bucketNum, vec.size());
 
 	}
+	cout << "Multiplicacion:\n";
+	for (int i = 0; i < hashTable.size(); i++)
+	{
+		imprimirVector(hashTable[i]);
+	}
+	cout << "Division:\n";
+	for (int i = 0; i < hashTable2.size(); i++)
+	{
+		imprimirVector(hashTable2[i]);
+	}
+	cout << "Universal:\n";
 	for (int i = 0; i < hashTable3.size(); i++)
 	{
 		imprimirVector(hashTable3[i]);
-
 	}
 	return 0;
 }
@@ -62,22 +73,21 @@ std::vector<int> acendente(int n)
 	return vec;
 }
 
-int hashMul(int key, int consta)
+int hashMul(int key, int consta,int value)
 {
-	int cons = consta;
-	key = (key ^ cons) ^ (key >> cons);
-	key = key * cons;
+	float cons = 0.5;
+	key = (key * cons);
 	int numtab = key % consta;
-	hashTable[numtab].push_back(key);
+	hashTable[numtab].push_back(value);
 	return key;
 }
-int hashDiv(int key, int consta)
+int hashDiv(int key, int consta, int value)
 {
 	int cons = consta;
 	key = (key ^ cons) ^ (key >> cons);
 	key = key / cons;
 	int numtab = key % consta;
-	hashTable2[numtab].push_back(key);
+	hashTable2[numtab].push_back(value);
 	return key;
 }
 int hashUn(int key,int value, int consta, int numkeys)
