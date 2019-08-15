@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\sergi\source\repos\dynamicprograming\dynamicprograming\main.cpp(55): warning C4018: '<': no coinciden signed/unsigned
+c:\users\sergi\source\repos\dynamicprograming\dynamicprograming\main.cpp(62): warning C4018: '<': no coinciden signed/unsigned
+c:\users\sergi\source\repos\dynamicprograming\dynamicprograming\main.cpp(83): warning C4018: '<': no coinciden signed/unsigned
+c:\users\sergi\source\repos\dynamicprograming\dynamicprograming\main.cpp(119): warning C4018: '<': no coinciden signed/unsigned
+  dynamicPrograming.vcxproj -> C:\Users\sergi\source\repos\dynamicPrograming\Debug\dynamicPrograming.exe

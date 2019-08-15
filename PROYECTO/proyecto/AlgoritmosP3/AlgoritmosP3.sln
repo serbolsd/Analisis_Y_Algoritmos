@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlgoritmosP3", "AlgoritmosP3\AlgoritmosP3.vcxproj", "{371895FD-9C67-47AB-B056-0B28A5800F4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{371895FD-9C67-47AB-B056-0B28A5800F4E}.Debug|x64.ActiveCfg = Debug|x64
+		{371895FD-9C67-47AB-B056-0B28A5800F4E}.Debug|x64.Build.0 = Debug|x64
+		{371895FD-9C67-47AB-B056-0B28A5800F4E}.Debug|x86.ActiveCfg = Debug|Win32
+		{371895FD-9C67-47AB-B056-0B28A5800F4E}.Debug|x86.Build.0 = Debug|Win32
+		{371895FD-9C67-47AB-B056-0B28A5800F4E}.Release|x64.ActiveCfg = Release|x64
+		{371895FD-9C67-47AB-B056-0B28A5800F4E}.Release|x64.Build.0 = Release|x64
+		{371895FD-9C67-47AB-B056-0B28A5800F4E}.Release|x86.ActiveCfg = Release|Win32
+		{371895FD-9C67-47AB-B056-0B28A5800F4E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80F54363-5AB4-4F61-9377-07AB63B8F154}
+	EndGlobalSection
+EndGlobal
